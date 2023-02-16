@@ -21,6 +21,7 @@ jobs:
         with:
           workload_identity_provider: 'projects/248178295773/locations/global/workloadIdentityPools/github-wif-pool/providers/githubwif'
           service_account: 'test-wif@makefile-378011.iam.gserviceaccount.com'
+          create_credentials_file: true
 
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v0'
