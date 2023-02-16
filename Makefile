@@ -48,13 +48,13 @@ create-provider:
 		--project $(PROJECT_ID)
 
 create-service-account:
-	gcloud iam service-accounts create test-wif \
-		--display-name="Service account used by WIF POC" \
-		--project $(PROJECT_ID)
+	# gcloud iam service-accounts create test-wif \
+	# 	--display-name="Service account used by WIF POC" \
+	# 	--project $(PROJECT_ID)
 
 	gcloud projects add-iam-policy-binding $(PROJECT_ID) \
 		--member='serviceAccount:test-wif@$(PROJECT_ID).iam.gserviceaccount.com' \
-		--role="roles/artifactregistry.admin"
+		--role="roles/owner"
 
 bind-service-account:
 	gcloud iam service-accounts add-iam-policy-binding test-wif@$(PROJECT_ID).iam.gserviceaccount.com \
