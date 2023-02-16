@@ -7,6 +7,8 @@ LOCATION=europe-west4
 WIF_POOL=new-github-wif-pool-3
 SERVICE_ACCOUNT_NAME=cicd-wif-new
 
+
+
 echo "Authenticating to GCP and setting project"
 gcloud auth login
 gcloud config set project "${PROJECT_ID}"
