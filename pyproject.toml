@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "gcp-set-up"
+version = "0.1.0"
+description = ""
+authors = ["bjornvandijkman-vantage <bjorn.van.dijkman@vantage-ai.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.92.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
